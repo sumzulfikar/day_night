@@ -1,0 +1,44 @@
+:root{
+    padding: 20px;
+    height: 100vh;
+}
+.clock-container{
+    width: 203px;
+    height: 90px;
+    position:relative;
+    align-items: center;
+    border:red;
+    top:50%;
+    bottom: 50%;
+    /* transform:(-50%,-50%); */
+    border-radius: 10%/50%;
+    background-color: salmon;
+    
+}
+.clock{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+}
+.clock,span{
+    font-size: 30px;
+    width: 100px;
+    font-family: 'Oswald',sans-serif !important;
+    display: flex;
+    text-align: center;
+    position: relative;
+   justify-content: space-evenly;
+}
+
+
+.clock,span::after{
+    content: '';
+    font-size:16px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform: translateX(-50%);
+}

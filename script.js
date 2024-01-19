@@ -18,3 +18,9 @@ themeSwitcher.addEventListener("change",function(){
         
 
 });
+var timehrs=dayjs().format("HH");
+$("#hrs").text(timehrs);
+var timemins=dayjs().format("mm");
+$("#mins").text(timemins);
+var timepart=dayjs().format("a");
+$("#part").text(timepart);
